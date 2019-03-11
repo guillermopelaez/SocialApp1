@@ -8,23 +8,23 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <Button
-            android:id="@+id/publish"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Publish"
-            android:layout_gravity="end"/>
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
         <EditText
             android:id="@+id/postText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Your thoughts..."
-            android:textSize="24sp"
-            android:lines="6"
-            android:gravity="top|left">
+            android:hint="Introduce tu nuevo post..."
+            android:textSize="20sp"
+            android:lines="5"
+            android:gravity="top|left"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp">
             <requestFocus />
         </EditText>
+
         <ImageView
             android:id="@+id/image"
             android:layout_width="200dp"
@@ -32,7 +32,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -40,21 +41,21 @@
 
                 <Button
                     android:id="@+id/btnImage"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:background="@drawable/image" />
 
                 <Button
                     android:id="@+id/btnVideo"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:background="@drawable/ic_movie_black_24dp" />
                 <Button
                     android:id="@+id/btnAudio"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:background="@drawable/audio"/>
 
@@ -66,27 +67,36 @@
 
                 <Button
                     android:id="@+id/btnCameraImage"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:background="@drawable/ic_camera_alt_black_24dp" />
 
                 <Button
                     android:id="@+id/btnCameraVideo"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:background="@drawable/video" />
 
                 <Button
                     android:id="@+id/btnMic"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:background="@drawable/ic_mic_black_24dp" />
             </LinearLayout>
 
         </LinearLayout>
+        <Button
+            android:id="@+id/publish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Publicar"
+            android:layout_gravity="end"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/botton_redondo"
+           />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

@@ -61,7 +61,7 @@ public class PostsFragment extends Fragment {
                     viewHolder.numLikes.setTextColor(getResources().getColor(R.color.red));
                 } else {
                     viewHolder.like.setImageResource(R.drawable.heart_off);
-                    viewHolder.numLikes.setTextColor(getResources().getColor(R.color.grey));
+                    viewHolder.numLikes.setTextColor(getResources().getColor(R.color.greylight));
                 }
 
                 viewHolder.content.setText(post.content);
@@ -89,6 +89,14 @@ public class PostsFragment extends Fragment {
 
                 viewHolder.numLikes.setText(String.valueOf(post.likes.size()));
 
+                viewHolder.delete.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        //mReference.child().removeValue();
+                        //Toast.makeText(getContext(),"hola", Toast.LENGTH_SHORT).show();
+                        mReference.child("posts/data").child(postKey).removeValue();
+                    }
+                });
                 viewHolder.likeLayout.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {

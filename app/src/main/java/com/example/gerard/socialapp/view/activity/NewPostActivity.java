@@ -219,6 +219,7 @@ public class NewPostActivity extends AppCompatActivity {
                 finish();
             }
         });
+
     }
 
     private void uploadAndWriteNewPost(final String postText){

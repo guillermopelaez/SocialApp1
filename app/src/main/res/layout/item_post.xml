@@ -62,12 +62,23 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"/>
 
+                <ImageView
+                    android:layout_marginLeft="50dp"
+                    android:id="@+id/delete"
+                    app:srcCompat="@drawable/ic_round_delete_24px"
+                    android:adjustViewBounds="true"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" />
+
+
                 <TextView
                     android:id="@+id/num_likes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="4dp"
                     android:layout_gravity="center_vertical" />
+
 
             </LinearLayout>
 
